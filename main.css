@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+a.text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    /* 2. Căn vị trí nổi lên trên hình */
+    margin: 0 auto; /* Đẩy ra giữa màn hình */
+    margin-top: 400px;
+    position: relative;
+    z-index: 10;
+    
+    /* 3. Đóng khung nút bấm */
+    display: block;
+    width: fit-content; /* Lệnh VIP: Ép cái khung ôm sát vào chữ */
+    padding: 12px 35px; /* Thụt vào: trên/dưới 12px, trái/phải 35px */
+    border-radius: 0px; /* Bo góc tròn vo, thích vuông thì đổi thành 8px */
+    
+    /* 4. Giúp hiệu ứng chuyển màu mượt mà không bị giật cục */
+    transition: all 0.3s ease;
+}
+
+a.text:hover {
+    color: #000000;
+    transform: translateY(-5px); 
+    cursor: pointer;
+    background-color:white
+}
