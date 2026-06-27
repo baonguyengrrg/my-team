@@ -4,11 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PassoCrafto</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="/menu.html" class="text">PASSOCRAFTO</a>
+
+    <!-- ===== SPLASH (index) ===== -->
+    <div id="page-splash" class="page active">
+        <a href="#" class="splash-btn" data-nav="home">PASSOCRAFTO</a>
+    </div>
+
+    <!-- ===== NAVBAR (dùng chung cho 3 trang còn lại) ===== -->
+    <nav class="top-bar" id="navbar">
+        <a href="#" data-nav="home" class="logo-link">
+            <img src="/pic/logo.png.png" alt="PASSOCRAFTO" class="logo">
+        </a>
+        <ul class="nav-menu">
+            <li><a href="#" data-nav="home" data-page="home">HOME</a></li>
+            <li><a href="#" data-nav="members" data-page="members">MEMBERS</a></li>
+            <li><a href="#" data-nav="projects" data-page="projects">OUR PROJECTS</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <div id="page-home" class="page">
+        <div class="main-wrapper">
+            <section class="row-container">
+                <div class="text-side">
+                    <h2>Welcome to PassoCrafto</h2>
+                    <p>We are a team of passionate developers from many universities in Vietnam, working together to create innovative projects in AI, IoT, and Software Engineering, founded in 2025 by a group of VNU students (HCMUT and HCMUS). After a long period of development, we have successfully launched several projects that showcase our skills and dedication to innovation with many more talented members from other universities.</p>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="#" data-nav="home">Home</a>
+                    <a href="#" data-nav="members">Members</a>
+                    <a href="#" data-nav="projects">Our Projects</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@passocrafto.com</p>
+                    <p>Location: Ho Chi Minh City, Viet Nam</p>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 PassoCrafto Team. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <!-- ===== MEMBERS ===== -->
+    <div id="page-members" class="page">
+        <div class="main-wrapper members-wrapper">
+            <section class="content-container">
+                <h2>Our Members</h2>
+                <div class="members-grid">
+                    <div class="member-card">
+                        <img src="/pic/av1.jpg" alt="Member">
+                        <div class="member-info">
+                            <h3>Nguyễn Hoàng Gia Bảo</h3>
+                            <p>Co-Founder</p>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <img src="/pic/av2.jpg" alt="Member">
+                        <div class="member-info">
+                            <h3>Lưu Thiện Nhân</h3>
+                            <p>Co-Founder</p>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <img src="/pic/av3.jpg" alt="Member">
+                        <div class="member-info">
+                            <h3>Nguyễn Phan Thành Đạt</h3>
+                            <p>Co-Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="#" data-nav="home">Home</a>
+                    <a href="#" data-nav="members">Members</a>
+                    <a href="#" data-nav="projects">Our Projects</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@passocrafto.com</p>
+                    <p>Location: Ho Chi Minh City, VN</p>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 PassoCrafto Team. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <!-- ===== PROJECTS ===== -->
+    <div id="page-projects" class="page">
+        <div class="main-wrapper projects-wrapper">
+            <section class="content-container">
+                <h2>Our Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="/pic/project1.jpg" alt="Project 1">
+                        <div class="project-info">
+                            <h3>Face Tracking System</h3>
+                            <p>A project combining Computer Vision and IoT technologies.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="/pic/project2.jpg" alt="Project 2">
+                        <div class="project-info">
+                            <h3>AgriMap</h3>
+                            <p>A smart agriculture mapping tool for optimizing logistics.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="#" data-nav="home">Home</a>
+                    <a href="#" data-nav="members">Members</a>
+                    <a href="#" data-nav="projects">Our Projects</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@passocrafto.com</p>
+                    <p>Location: Ho Chi Minh City, Viet Nam</p>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 PassoCrafto Team. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
